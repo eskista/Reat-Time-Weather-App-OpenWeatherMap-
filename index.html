@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <nav class="jumbotron">
+        <h1 class="display">Weather Dashboard</h1>
+    </nav>
+    <div class="contianer">
+        <!-- first row -->
+        <div class="row">
+            <!-- first row's (container's) first column -->
+            <div class="col-4" id="searchDiv">
+                <div>
+                    <h5>Search for City Here</h5>
+                     <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <input id="city" type="text" class="inputValue" placeholder=" City name">
+                   
+                    <button type="button" value="search" class="button" onclick="getWeather()">Search</button>
+                </div>
+            </div>
+            <!-- first row's (container's) second column -->
+            <div class="col-8">
+                <!-- second column's first row -->
+                <div class="row" style="padding-left: 15px;">
+<!--                    //<h5> Date and weather Attributes here</h5>-->
+
+                    <div class="weather-container">
+
+                        <h5 class="cityName"></h5>
+                        <p class="currentDate"></p>
+                        <img class="weatherIcon">
+
+                        <p class="weatherCondition"></p>
+                        <p class="temp"></p>
+                        <p class="humidity"></p>
+                        <p class="windSpeed"></p>
+                    </div>
+
+                </div>
+                <!-- Three day forecast -->
+                <!-- second column's second row -->
+                <!-- <div class="row">
+                    <div class="col">
+                        <h5>3-Day Forecast:</h5>
+                        <div class="column">
+                            <div class="card">
+                              <h3>Card 1</h3>
+                              <p>Some text</p>
+                              <p>Some text</p>
+                            </div>
+                          </div>
+                          <div class="column">
+                            <div class="card">
+                              <h3>Card 1</h3>
+                              <p>Some text</p>
+                              <p>Some text</p>
+                            </div>
+                          </div>      
+                          
+                          <div class="column">
+                            <div class="card">
+                              <h3>Card 1</h3>
+                              <p>Some text</p>
+                              <p>Some text</p>
+                            </div>
+                          </div>            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="footer">
+        <p>© Copyright 2020</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

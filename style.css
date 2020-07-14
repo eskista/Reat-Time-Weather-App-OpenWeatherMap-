@@ -1,0 +1,90 @@
+.jumbotron {
+  font-size: medium;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.411);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.button {
+  position: fixed;
+  height: 50px;
+  width: 80px;
+  color: white;
+  background: #179deb;
+  font-family: "nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  padding-bottom: 100;
+}
+
+input[type="text"] {
+  height: 50px;
+  width: 150px;
+  border-color: rgba(190, 188, 188, 0.26);
+  height: 50px;
+  font-family: "nunito", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 100;
+}
+#searchDiv {
+  padding-left: 70px;
+  background-color: #a7a5a523;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(9, 143, 231, 0.877);
+  transition: 0.3s;
+  width: 40%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(5, 167, 231, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #179deb;
+  color: white;
+}
+/* float side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.weather-container {
+  border-color: rgba(190, 188, 188, 0.26);
+  background-color: #a7a5a523;
+  width: 100%;
+}
